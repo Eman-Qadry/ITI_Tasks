@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Colors</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        p {
+            padding: 10px;
+            margin: 10px auto;
+            border: 1px solid #ccc;
+            width: 50%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <p>Hello world</p>
+    <p>Eman Qadry</p>
+    <p>MERN Developer</p>
+    <button id="colorButton">Generate Random Colors</button>
+
+    <script>
+        // Function to generate a random color
+        function getRandomColor() {
+            const randomColor = `rgb(${Math.floor(Math.random() * 256)}, 
+                                    ${Math.floor(Math.random() * 256)}, 
+                                    ${Math.floor(Math.random() * 256)})`;
+            return randomColor;
+        }
+
+        // Function to set random colors for paragraphs
+        function setRandomColors() {
+            const paragraphs = document.querySelectorAll('p');
+            paragraphs.forEach(paragraph => {
+                let textColor, backgroundColor;
+                do {
+                    textColor = getRandomColor();
+                    backgroundColor = getRandomColor();
+                } while (textColor === backgroundColor); // Ensure they are not equal
+                paragraph.style.color = textColor;
+                paragraph.style.backgroundColor = backgroundColor;
+            });
+        }
+
+        // Add click event to the button
+        document.getElementById('colorButton').addEventListener('click', setRandomColors);
+    </script>
+</body>
+</html>
