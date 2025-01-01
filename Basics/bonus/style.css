@@ -1,0 +1,40 @@
+.header{
+    width:100%;
+    border:2px solid black;
+
+}
+.header .right,.header .left{
+    display: inline-block;
+}
+.header .right{
+
+   width:50%;
+
+  
+}
+.header .left{
+    
+    margin-top: 50px;
+}
+.header .left button{
+    display: block;
+}
+.header .section .head ,.header .section .details{
+    display: inline-block;
+}
+
+.header .section .head{
+    width:15%;
+  padding-left: 30px;
+
+  
+}
+.header .section .details {
+  width: 60%;
+  margin-top: 20px;
+  
+}
+.header .section .details .skills{
+    display: inline-block;
+    width :30%;
+}

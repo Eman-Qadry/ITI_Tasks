@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Map Example</title>
+</head>
+<body>
+    <h2>Clickable Image Map Example</h2>
+    <p>Click on the highlighted areas of the map to navigate to specific pages:</p>
+
+    
+    <img src="/task1/flower.jpg" 
+         alt="World Map" usemap="#worldmap" width="600">
+
+    
+    <map name="worldmap">
+      
+        <area shape="rect" coords="100,50,200,150" href="conditions.html" 
+              alt="North America">
+       
+        <area shape="circle" coords="350,100,50" href="welcome.html" alt="Europe">
+      
+        <area shape="poly" coords="500,300,550,320,530,360,480,340" 
+              href="countries.html" alt="Australia">
+    </map>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="increment" style="width:100px;height:50px" onclick="incrementfun()"> increment</button>
+    <br>
+    <br>
+    <button class="decrement"style="width:100px;height:50px" onclick="decrementfun()">decrement</button>
+
+    <button style="width:100px;height:50px" onclick="add()"> Add</button>
+    <br>
+    <br>
+    <button  style="width:100px;height:50px" onclick="subtract()">subtract</button>
+
+    <div class="dashboard"id=#dashboard>
+        <h2>Text Transformation Dashboard</h2>
+        <input type="text" id="textinput" placeholder="input your text">
+
+<button onclick="toupper()">uppercase</button>
+<button onclick="tolower()">lowercase</button>
+<button onclick="replacespace()">replace space</button>
+<div id="output">Transformed text will appear here...</div>
+    </div>
+
+    <button id="btn1"onclick="canA()">candidateA</button>
+    <button id="btn1"onclick="canB()">candidateB</button>
+    <button id="btn1"onclick="canC()">candidateC</button>
+    <div id="vot1" style=" width:50px; height:50px;border:5px solid red ;display:inline-block ;padding:5px">vote A </div>
+    <div id="vot2" style=" width:50px; height:50px;border:5px solid blue;display:inline-block ;padding:5px">vote B</div>
+    <div id="vot3" style=" width:50px; height:50px;border:5px solid black;display:inline-block ;padding:5px">vote C </div>
+    <script src="script.js"></script>
+</body>
+</html>

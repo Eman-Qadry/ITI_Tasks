@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <form method="get" action="/task2/welcome.html" >
+       <div>
+        <label for ="firstName"> first name</label>
+        <input type="text" name="firstName" id="firstName">
+    </div>
+
+       <div>
+        <label for ="lastName"> last name</label>
+        <input type="text" name="lastName" id="lastName">
+    </div>
+
+       <div>
+        <label for ="password"> password</label>
+        <input type="password" name="password" id="password">
+    </div>
+         <div>
+        <label for ="age"> age</label>
+        <input type="number" min="15" max="60" name="age" id="age">
+    </div>
+
+    <div>
+       
+        <input type="checkbox" name="hoppy1" value="reading" id="hoppy1">
+        <label for="hoppy1">reading</label>
+        
+        <input type="checkbox" name="hoppy2" value="swimming" id="hoppy2">
+        <label for="hoppy2">swimming</label>
+
+        
+        <input type="checkbox" name="hoppy3" value="picking" id="hoppy3">
+        <label for="hoppy3">picking</label>
+    </div>
+
+    <div>
+        <input type="radio" name="gender" value="male">male
+        <input type="radio" name="gender" value="female">female
+    </div>
+    <div>
+    <label for="notes">notes</label>
+    <input type="textarea" name="notes" id="notes">
+</div>
+<div>
+  
+    <label for="submit1"></label>
+   
+    <input type ="submit" id="submit1">
+
+</div>
+    </form>
+<br>
+
+    <iframe src=" https://iti.gov.eg" width="100%" height="800px"></iframe>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Tab Index and Access Keys</title>
+</head>
+<body>
+    <form method="get" action="/task2/welcome.html">
+        <div>
+            <input type="hidden" name="userId" value="#userId">
+            <div>
+                <label for="userPicture">User Picture</label>
+                <input type="file" id="userPicture" name="userPicture" accept="image/*" onchange="previewImage()" required>
+            </div>
+            <label for="firstName">First Name (Accesskey: F)</label>
+            <input type="text" name="firstName" id="firstName" required tabindex="1" accesskey="f">
+        </div>
+
+        <div>
+            <label for="lastName">Last Name (Accesskey: L)</label>
+            <input type="text" name="lastName" id="lastName" required tabindex="2" accesskey="l">
+        </div>
+
+        <div>
+            <label for="Email">Email (Accesskey: E)</label>
+            <input type="email" name="email" id="Email" required tabindex="3" accesskey="e">
+        </div>
+
+        <div>
+            <label for="password">Password (Accesskey: P)</label>
+            <input type="password" name="password" id="password" required tabindex="4" accesskey="p">
+        </div>
+
+        <div>
+            <label for="age">Age (Accesskey: A)</label>
+            <input type="number" min="15" max="60" name="age" id="age" tabindex="5" accesskey="a">
+        </div>
+
+        <div>
+            <label>Hobbies (Accesskey: H)</label>
+            <input type="checkbox" name="hoppy1" value="reading" id="hoppy1" tabindex="6">
+            <label for="hoppy1">Reading</label>
+
+            <input type="checkbox" name="hoppy2" value="swimming" id="hoppy2" tabindex="7">
+            <label for="hoppy2">Swimming</label>
+
+            <input type="checkbox" name="hoppy3" value="programming" id="hoppy3" tabindex="8">
+            <label for="hoppy3">Programming</label>
+        </div>
+
+        <div>
+            <label>Gender (Accesskey: G)</label>
+            <input type="radio" name="gender" value="male" tabindex="9">Male
+            <input type="radio" name="gender" value="female" tabindex="10">Female
+        </div>
+
+        <div>
+            <label for="Date">Date and Time (Accesskey: D)</label>
+            <input type="datetime-local" id="Date" tabindex="11" accesskey="d">
+        </div>
+
+        <div>
+            <label for="faculty">Faculty (Accesskey: S)</label>
+            <select id="faculty" tabindex="12" accesskey="s">
+                <option value="computer science">Computer Science</option>
+                <option value="medicine">Medicine</option>
+                <option value="engineering">Engineering</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="notes">About You (Accesskey: N)</label>
+            <textarea name="notes" id="notes" tabindex="13" accesskey="n"></textarea>
+        </div>
+        <div>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">
+                I agree to the 
+                <a href="conditions.html" target="_blank" rel="noopener noreferrer">
+                    Terms and Conditions
+                </a>
+            </label>
+        </div>
+        <div>
+            <label for="submit1">Submit</label>
+            <input type="submit" id="submit1" tabindex="14" accesskey="x">
+            <label for="reset1">Reset</label>
+            <input type="reset" id="reset1">
+        </div>
+    </form>
+</body>
+</html>
+
+     <ol>
+        <li>Coffee </li>
+        <li> tea
+            <ul>
+                <li>
+                 Black tea
+                </li>
+                <li>
+                    Green tea
+                </li>
+            </ul>
+        </li>
+        <li> milk</li>
+        
+      
+     </ol>
+     <br>
+
+
+     <form method="get" action="/task2/welcome.html" >
+        <fieldset >
+            <legend > Customer Info </legend>
+        <div>
+           
+         <label for ="Name"> name</label>
+         <input type="text" name="Name" id="Name" required>
+     </div>
+ 
+        <div>
+         <label for ="phone"> phone</label>
+         <input type="tele" name="phone" id="phone" required>
+     </div>
+     <div>
+        <label for ="Email"> Email</label>
+        <input type="email" name="email" id="Email" required>
+    </div>
+
+</fieldset>
+        
+        <fieldset>
+ 
+     <legend>books</legend>
+     <div>
+        <input type="text" name="bookName" id="bookName" required>
+        <label for ="quantity"> Quantity</label>
+        <input type="number" min="1" max="5" name="quantity" id="quantity">
+    </div>
+     
+</fieldset>
+
+   
+ <div>
+   
+     <label for="submit1"></label>
+    
+     <input type ="submit" id="submit1">
+ 
+ </div>
+     </form>
+</body>
+</html>
