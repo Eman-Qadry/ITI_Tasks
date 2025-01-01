@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Draw and Erase</title>
+    <style>
+        canvas {
+            border: 2px solid black;
+            display: block;
+            margin: 20px auto;
+        }
+        button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center;">
+        <button onclick="activateDraw()">Draw</button>
+        <button onclick="activateErase()">Erase</button>
+    </div>
+    <canvas id="canvas1" width="500" height="500"></canvas>
+
+    <script>
+        const canvas = document.getElementById("canvas1");
+        const ctx = canvas.getContext("2d");
+
+        let mode = ""; 
+        let rectangles = []; 
+
+     
+        function activateDraw() {
+            mode = "draw";
+        }
+
+       
+        function activateErase() {
+            mode = "erase";
+        }
+
+        
+        canvas.addEventListener("click", (e) => {
+            const rect = canvas.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            if (mode === "draw") {
+             
+                const rectangle = { x: x, y: y, width: 30, height: 30, color: "blue" };
+                rectangles.push(rectangle);
+                drawRectangle(rectangle);
+            } else if (mode === "erase") {
+               
+                for (let i = 0; i < rectangles.length; i++) {
+                    const rect = rectangles[i];
+                    if (
+                        x >= rect.x &&
+                        x <= rect.x + rect.width &&
+                        y >= rect.y &&
+                        y <= rect.y + rect.height
+                    ) {
+                        
+                        rectangles.splice(i, 1);
+                        redrawCanvas();
+                        break;
+                    }
+                }
+            }
+        });
+
+       
+        function drawRectangle(rectangle) {
+            ctx.fillStyle = rectangle.color;
+            ctx.fillRect(rectangle.x, rectangle.y, rectangle.width, rectangle.height);
+        }
+
+     
+        function redrawCanvas() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height); 
+            for (const rect of rectangles) {
+                drawRectangle(rect);
+            }
+        }
+    </script>
+</body>
+</html>

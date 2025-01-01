@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery with Zoom Out</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .gallery {
+            display: flex;
+            gap: 20px; /* Space between images */
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1); /* Zoom out on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Enhance shadow on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="img1.png" alt="Image 1">
+        <img src="img2.png" alt="Image 2">
+        <img src="img3.png" alt="Image 3">
+    </div>
+</body>
+</html>
