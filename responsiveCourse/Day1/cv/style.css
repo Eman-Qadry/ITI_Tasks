@@ -1,0 +1,150 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-rows: auto auto auto  1fr auto ;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    
+  }
+  nav .name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px
+  }
+  .header img{
+    display: inline-block;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+  }
+  .header ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  /* Header section */
+  .headerdata {
+    text-align: center;
+    background-image: url("../images/img3.jpg");
+    color: white;
+    padding: 20px;
+  }
+  
+  .headerdata h1 {
+    font-size: 2rem;
+  }
+  
+  .headerdata p {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  
+  .headerdata button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .headerdata button:hover {
+    background-color: #0056b3;
+  }
+  
+
+  .hero  {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 20px;
+  }
+   i{
+    padding :0 10px;
+    font-size: 50px;
+   }
+
+  .features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  .about{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  .features .feature {
+    background-color: #f9f9f9;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  /* Blog and Skills section */
+  .blog-skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .blog-skills div {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  /* About Me section */
+  .about-me {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .about-me h2 {
+    font-size: 1.5rem;
+  }
+  
+  .about-me p {
+    font-size: 1rem;
+  }
+  .about-me{
+    padding: 0 10%;
+  }
+  .about-me span{
+    padding-top: 15%;
+  }
