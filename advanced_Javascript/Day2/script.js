@@ -10,8 +10,10 @@ person.prototype.printPerson=function (){
 }
 // c.	Create student object that inherits from Person, and its constructor have two member variables 
 // (Faculty and Total_mark), and put default value for Total_mark to be 0 (Using Function Constructor).
+Student.prototype =new person();
 function Student(name,age,Faculty ,Total_mark=0){
-    person.call(this,name,age)
+  this.name=name;
+  this.age=age;
     this.Faculty=Faculty;
     this.Total_mark=Total_mark;
 }
