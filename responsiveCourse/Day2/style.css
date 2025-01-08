@@ -11,6 +11,9 @@ aside{
   align-items: center;
 
 }
+.menuIcon i {
+    display:none;
+}
 main{
     width:75%;
     padding: 20px;
@@ -52,18 +55,7 @@ header  .filter button.active {
     padding: 5px;
   }
   /* General Styles */
-.container {
-  width: 100%;
-  display: flex;
-}
 
-aside {
-  width: 20%;
-  border-right: 1px solid #ddd;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 main {
   width: 75%;
@@ -82,7 +74,7 @@ main {
   width: 300px;
 }
 
-/* General Styles */
+
 .container {
   width: 100%;
   display: flex;
@@ -100,7 +92,7 @@ aside {
 main {
   width: 80%;
   padding: 20px;
-  background-color: azure;
+  background-color: beige;
 }
 
 .gallary {
@@ -114,9 +106,9 @@ main {
   width: 300px;
 }
 
-/* Responsive Styles */
 
-/* Tablet View (768px and below) */
+
+/* Tablet View  */
 @media (max-width: 768px) {
   .container {
       flex-direction: column;
@@ -124,25 +116,41 @@ main {
   
   aside {
       width: 100%;
-      flex-direction: row;
-      justify-content: center;
-      border-right: none;
-      border-bottom: 1px solid #ddd;
+     background-color: beige;
+      
+    padding:  10px 20px;
+      border: 1px solid #ddd;
   }
-  
+  .profile{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+  justify-content: space-between;
+  }
+  .menuIcon i{
+    display: inline-block;
+    font-size: 60px;
+  }
+  aside img{
+    display: inline-block;
+    padding-right: 10px;;
+  }
+  ul,h2,p,.social-icons {
+    display: none;
+  }
   main {
       width: 100%;
   }
 }
 
-/* Mobile View (480px and below) */
+/* Mobile View */
 @media (max-width: 480px) {
   aside {
       display: none;
   }
 
   main header img {
-      display: none; /* Hides banner image */
+      display: none; 
   }
   
   main {
