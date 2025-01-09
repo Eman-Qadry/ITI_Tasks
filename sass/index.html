@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SCSS Testing</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Compile SCSS to styles.css -->
+</head>
+<body>
+  <h1>SCSS Testing</h1>
+
+  <!-- Test 1: Nested Rules -->
+  <a href="#">Hover over me</a>
+
+  <!-- Test 2: Mixin for Border Radius -->
+  <div class="box-square">Square Box</div>
+  <div class="box-rounded">Rounded Box</div>
+
+  <!-- Test 3: Extend for Shared Styles -->
+  <div class="success">Success Box</div>
+  <div class="error">Error Box</div>
+  <div class="warning">Warning Box</div>
+
+  <!-- Test 4: Extend with Variables -->
+  <a class="twitter" href="#">Twitter Button</a>
+  <span class="facebook">Facebook Button</span>
+
+  <!-- Test 5: Function for Conditional Color -->
+  <div class="conditional-color">This div tests the determine-color function</div>
+
+  <script>
+    // For testing the function behavior
+    const div = document.querySelector('.conditional-color');
+    const isLTR = true; // Change to false to test RTL behavior
+    div.style.color = isLTR ? 'red' : 'blue'; // Replace 'red' with the SCSS-defined color
+  </script>
+</body>
+</html>
