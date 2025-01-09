@@ -77,7 +77,7 @@ span.facebook {
   }
   
  
-  div {
+  .conditional-color {
     color: determine-color(ltr, red); // Change "ltr" to "rtl" for testing
   }
   

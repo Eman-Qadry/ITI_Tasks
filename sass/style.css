@@ -1,5 +1,5 @@
 body {
-  background-color: #ff5733;
+  background-color: white;
 }
 
 p {
@@ -58,7 +58,7 @@ span.facebook {
   background: #3b5998;
 }
 
-div {
+.conditional-color {
   color: red;
 }
 
