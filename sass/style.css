@@ -1,0 +1,65 @@
+body {
+  background-color: #ff5733;
+}
+
+p {
+  color: #33ff57;
+}
+
+h1 {
+  border-color: #3357ff;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.box-square {
+  border-radius: 0;
+}
+
+.box-rounded {
+  border-radius: 10px;
+}
+
+.warning, .error, .success {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.success {
+  border-color: green;
+}
+
+.error {
+  border-color: red;
+}
+
+.warning {
+  border-color: yellow;
+}
+
+span.facebook, a.twitter {
+  min-width: 100px;
+  padding: 1em;
+  border-radius: 1em;
+  color: #fff;
+}
+
+a.twitter {
+  background: #55acee;
+}
+
+span.facebook {
+  background: #3b5998;
+}
+
+div {
+  color: red;
+}
+
+/*# sourceMappingURL=style.css.map */

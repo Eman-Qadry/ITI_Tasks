@@ -1,0 +1,84 @@
+@import 'file1';
+@import 'file2';
+@import 'file3';
+
+
+
+a {
+    text-decoration: none;
+  
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  
+  @mixin borderRadius($radius) {
+    border-radius: $radius;
+  }
+  
+  .box-square {
+    @include borderRadius(0);
+  }
+  
+  .box-rounded {
+    @include borderRadius(10px);
+  }
+
+
+  %main-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #333;
+  }
+  .success {
+    @extend %main-box;
+    border-color: green;
+  }
+  
+  .error {
+    @extend %main-box;
+    border-color: red;
+  }
+  
+  .warning {
+    @extend %main-box;
+    border-color: yellow;
+  }
+
+  $twitter-bg: #55acee;
+$facebook-bg: #3b5998;
+$shared-color: #fff;
+
+%shared {
+  min-width: 100px;
+  padding: 1em;
+  border-radius: 1em;
+  color: $shared-color;
+}
+
+a.twitter {
+  @extend %shared;
+  background: $twitter-bg;
+}
+
+span.facebook {
+  @extend %shared;
+  background: $facebook-bg;
+}
+
+
+@function determine-color($direction, $color) {
+    @if $direction == ltr {
+      @return $color;
+    } @else {
+      @return blue;
+    }
+  }
+  
+ 
+  div {
+    color: determine-color(ltr, red); // Change "ltr" to "rtl" for testing
+  }
+  
+
