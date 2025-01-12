@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation Rentals</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+ <style>
+    .hero-section {
+        background-image: url('./images/back.jpg'); /* Replace with your image URL */
+        background-size: cover;
+       
+        color: white;
+        height:auto;
+        
+        padding: 70px 20px;
+      }
+ </style>
+</head>
+<body>
+    <div class="hero-section">
+        <h1>Best Vacation Rentals</h1>
+        <p>Sed placerat ligula quam</p>
+        <button class="btn btn-primary">Start Now!</button>
+      </div>
+<div class="container">
+      <div class="row " style=" padding: 50px 0">
+        <!-- Type 1 -->
+        <div class="col-lg-4 col-md-6 col-sm-12 ">
+          <div class="text-center">
+            <img src="./images/img4.jpg" alt="Type 1" class="rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+            <h5>Type 1</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean hendrerit quis augue sit amet mollis.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean hendrerit quis augue sit amet mollis.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean hendrerit quis augue sit amet mollis.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean hendrerit quis augue sit amet mollis.
+            </p>
+           
+            <button class="btn btn-success" onclick="incrementValue('badge1')">
+                Book Now @ <span class="badge bg-light text-dark" id="badge1">599</span>
+            </button>
+          </div>
+        </div>
+  
+        <!-- Type 2 -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="text-center">
+            <img src="./images/img5.jpg" alt="Type 2" class="rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;"> 
+            <h5>Type 2</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean hendrerit quis augue sit amet mollis.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean hendrerit quis augue sit amet mollis.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean hendrerit quis augue sit amet mollis.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean hendrerit quis augue sit amet mollis.
+            </p>
+           
+            <button class="btn btn-danger" onclick="incrementValue('badge2')">
+                Book Now @ <span class="badge bg-light text-dark" id="badge2">899</span>
+            </button>
+          </div>
+        </div>
+  
+        <!-- Type 3 -->
+        <div class="col-lg-4 col-md-6 col-sm-12 ">
+          <div class="text-center ">
+            <img src="./images/profile.jpg" alt="Type 3" class="rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;"> 
+            <h5>Type 3</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean hendrerit quis augue sit amet mollis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean hendrerit quis augue sit amet mollis.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean hendrerit quis augue sit amet mollis.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean hendrerit quis augue sit amet mollis.
+              
+            </p>
+            <button class="btn btn-primary" onclick="incrementValue('badge3')">
+                Book Now @ <span class="badge bg-light text-dark" id="badge3">699</span>
+            </button>
+          </div>
+        </div>
+      </div>
+   
+    <footer class="text-center py-4 bg-light">
+        <div class="row">
+            <div class="col-md-4 ">@2013</div>
+          <div class="col-md-4 footer-links">
+            <a href="#" class=" btn btn-active bg-primary">About Us</a>
+            <a href="#" class=" btn ">Support 24/7</a>
+            <a href="#" class=" btn">Privacy Policy</a>
+          </div>
+          <div class="col-md-4 ">© 2023 Vacation Rentals</div>
+        
+        </div>
+      </footer>
+    </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        function incrementValue(badgeId) {
+            // Get the badge element
+            const badge = document.getElementById(badgeId);
+            // Convert its current value to a number and increment by 1
+            const currentValue = parseInt(badge.textContent);
+            badge.textContent = currentValue + 1;
+        }
+    </script>
+</body>
+</html>
