@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+#divOne {
+    width: 200px;
+    padding: 10px;
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    display: none;
+}
+
+.red { background-color: red; }
+.green { background-color: green; }
+.blue { background-color: blue; }
+
+#manage {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.glow {
+    box-shadow: 0 0 15px yellow;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
